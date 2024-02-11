@@ -1,11 +1,12 @@
 import Profile from './Profile/Profile';
 import Statistics from './Statistics/Statistics';
-import user from '../utils/user.json';
-import data from '../utils/data.json'
+import {FriendList} from './FriendList/FriendList';
 
+import user from '../utils/user.json';
+import data from '../utils/data.json';
+import friends from '../utils/friends.json';
 
 const { username, tag, location, avatar, stats } = user;
-
 
 export const App = () => {
   return (
@@ -18,7 +19,7 @@ export const App = () => {
         fontSize: 40,
         color: '#010101',
       }}
-      >
+    >
       <Profile
         username={username}
         tag={tag}
@@ -26,12 +27,9 @@ export const App = () => {
         avatar={avatar}
         stats={stats}
       />
-      
-      <Statistics title='UPLOAD STATS' stats={data} />
-      
-      
+
+      <Statistics title="UPLOAD STATS" stats={data} />
+      <FriendList friends={friends} />
     </div>
   );
 };
-
-

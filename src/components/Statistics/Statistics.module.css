@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  overflow: hidden;
+  /* overflow: hidden; */
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 40px;
@@ -23,7 +23,8 @@
 
 .stat__list {
   display: flex;
-  height: 48%;
+  /* height: 48%; */
+  height: 70px;
 }
 
 .item {
